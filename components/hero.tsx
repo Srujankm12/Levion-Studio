@@ -13,8 +13,10 @@ const quotes = [
 
 export function Hero() {
   const [currentQuote, setCurrentQuote] = useState(0)
+  const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
+    setMounted(true)
     const interval = setInterval(() => {
       setCurrentQuote((prev) => (prev + 1) % quotes.length)
     }, 3000)
@@ -48,17 +50,17 @@ export function Hero() {
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-primary/5 animate-pulse" />
       
       <div className="absolute inset-0 overflow-hidden">
-        {[...Array(20)].map((_, i) => (
+        {mounted && [...Array(20)].map((_, i) => (
           <motion.div
             key={i}
             className="absolute w-2 h-2 bg-primary/20 rounded-full"
             initial={{
-              x: Math.random() * window.innerWidth,
-              y: Math.random() * window.innerHeight,
+              x: Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1920),
+              y: Math.random() * (typeof window !== 'undefined' ? window.innerHeight : 1080),
             }}
             animate={{
-              y: [null, Math.random() * window.innerHeight],
-              x: [null, Math.random() * window.innerWidth],
+              y: [null, Math.random() * (typeof window !== 'undefined' ? window.innerHeight : 1080)],
+              x: [null, Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1920)],
             }}
             transition={{
               duration: Math.random() * 10 + 10,
