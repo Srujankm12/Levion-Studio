@@ -1,0 +1,140 @@
+Build a premium-level, modern, and animated agency website for “Levion Studio” using **Next.js 15 (App Router)**, **Tailwind CSS**, and **Framer Motion**. 
+Include both **Dark Mode and Light Mode** with a theme toggle button.
+
+---
+
+### 🏢 About the Brand
+Levion Studio is a full-stack creative and software development agency offering end-to-end digital solutions — from communication to deployment. 
+We help businesses grow by combining strategy, design, technology, and marketing under one roof. 
+
+### 📞 Company Info
+Email: official.levion@gmail.com  
+Phone: +91 83100 29635  
+Address: Shivamogga, India  
+
+---
+
+### 🎨 Design Direction
+**Theme:** Elegant, Futuristic, and Ultra-Premium.  
+**Tone:** Bold • Confident • Creative • Corporate.  
+**Colors:**  
+- Dark mode → black background (#000000), yellow (#FFD233), and white (#FFFFFF).  
+- Light mode → white background (#FFFFFF), black text (#000000), and yellow accent (#FFD233).  
+
+**Fonts:**  
+- Headings: Poppins / Montserrat (bold uppercase)  
+- Body: Inter / Manrope (clean and modern)
+
+**Layout:** Fullscreen immersive sections with smooth parallax, hover, and motion animations using **Framer Motion** and optional **GSAP-like** interactions.
+
+---
+
+### 🧩 Sections to Include (All Animated Professionally)
+
+#### 1. **Navigation Bar**
+- Sticky, transparent navbar with a blurred glass effect.
+- Smooth underline or glow effect on hover.
+- Toggle for dark/light mode.
+- Navigation links: Home, Services, Work, About, Contact.
+- Call-to-action button: “Let’s Talk”.
+
+#### 2. **Hero Section**
+- Full-screen hero with floating background animations (particles / gradient waves).
+- Animated heading: “Our Work. Your Way.” (each word staggered animation)
+- Subheadline: “We turn your ideas into impactful digital experiences.”
+- Add **auto-changing inspirational quotes** (every few seconds) like:
+  - “Innovation is our foundation.”  
+  - “Your vision, our creation.”  
+  - “Design. Build. Scale.”  
+- Include subtle animated lines or moving patterns behind the text.
+- “Get a Quote” button with gradient hover and glow.
+
+#### 3. **About Us Section**
+- Animated text reveal: “We don’t just build products — we craft digital experiences.”
+- Highlight: “Levion Studio delivers design, development, and marketing excellence in one ecosystem.”
+- Parallax scrolling image and text animation combo.
+
+#### 4. **Services Section**
+Display as animated cards with staggered entrance and hover effects.  
+Each card should:
+- Lift slightly on hover with a glowing border.
+- Contain an icon + short description.
+
+**Services:**
+- UI/UX Design & Figma Prototyping  
+- Mobile App Development (Android & iOS)  
+- Web Application Development  
+- Website Design & Development  
+- API & Backend Management  
+- Video Editing & Production  
+- Digital Marketing & SEO Optimization
+
+#### 5. **How We Work Section**
+- Animated horizontal timeline with 4 stages:
+  1. Communication  
+  2. Design  
+  3. Development  
+  4. Deployment  
+- Each step animates into view on scroll with line connector animation.
+
+#### 6. **Portfolio Section**
+- Dynamic 3D-like hover tilt cards for project showcase.
+- Overlay with project title and “View Case Study →” on hover.
+- Fade-in + zoom-in animation on scroll.
+- Add animated floating text behind the grid for aesthetic appeal.
+
+#### 7. **Testimonials / Clients**
+- Animated carousel or sliding cards.
+- Include glowing borders, gradient overlays, and motion entry.
+
+#### 8. **Contact / CTA Section**
+- Heading: “Let’s Build Something Great Together.”  
+- Subtext: “Drop us a message — we’ll handle the rest.”  
+- Form fields with smooth focus animations.
+- Include company info (email, phone, address).
+- Animated call-to-action button with ripple/glow effect.
+
+#### 9. **Footer**
+- Minimal sleek footer with logo, quick links, and social media icons.
+- Hover glow for icons.
+- Smooth fade-in animation on load.
+
+---
+
+### ⚡ Global Features & Animations
+- Smooth scroll with inertia effect.
+- Parallax motion background layers.
+- Line drawing animations between sections.
+- Auto-switching inspirational quotes in hero section.
+- Animated text underline hover on all links.
+- Page transition effects using `AnimatePresence`.
+- Floating glowing cursor (custom pointer following user).
+- Subtle GSAP-like section transitions.
+- Perfect responsiveness (desktop, tablet, mobile).
+
+---
+
+### 📁 File & Component Structure
+Use a clean, modular structure:
+- `/components/Navbar.tsx`
+- `/components/Hero.tsx`
+- `/components/Services.tsx`
+- `/components/Timeline.tsx`
+- `/components/Portfolio.tsx`
+- `/components/Testimonials.tsx`
+- `/components/Contact.tsx`
+- `/components/Footer.tsx`
+- `/components/ThemeToggle.tsx`
+
+Use Tailwind + Framer Motion in each component for animation.
+Ensure reusable motion variants for fade-in, stagger, slide, and hover effects.
+
+---
+
+### ✨ Overall Goal
+Make it **visually stunning**, **emotionally engaging**, and **technically clean** — the kind of website that feels like a premium creative studio (think Apple-level polish meets digital innovation).  
+The layout should feel cinematic and immersive while maintaining fast performance.
+
+---
+
+Deliver **production-ready Next.js code** that can be deployed to Vercel or Replit immediately.
