@@ -1,16 +1,6 @@
-# Dependencies
-node_modules/
-
-# Build outputs
-.next/
-dist/
-out/
-build/
-
-# Environment
-.env
-.env.*
-
-# System / IDE
+node_modules
+dist
 .DS_Store
-*.log
+server/public
+vite.config.ts.*
+*.tar.gz
