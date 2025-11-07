@@ -21,20 +21,25 @@ import {
   Menu,
   X
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Card } from "@/components/ui/card";
-import { useForm } from "react-hook-form";
+
+
+import { Form, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { insertContactSchema, type InsertContact } from "@shared/schema";
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
-import { useToast } from "@/hooks/use-toast";
+
+
 import { useMutation } from "@tanstack/react-query";
-import { apiRequest } from "@/lib/queryClient";
+
 import logoImage from "@assets/Group 1 (1)_1762409367674.png";
+import { useToast } from "../hooks/use-toast";
+import { InsertContact, insertContactSchema } from "@/shared/schema";
+import { apiRequest } from "../lib/queryClient";
+import { Button } from "../components/ui/button";
+import { Card } from "../components/ui/card";
+import { FormControl, FormField, FormItem, FormLabel, FormMessage } from "../components/ui/form";
+import { Input } from "../components/ui/input";
+import { Select, SelectContent, SelectTrigger, SelectValue } from "../components/ui/select";
+import { SelectItem } from "@radix-ui/react-select";
+import { Textarea } from "../components/ui/textarea";
 
 const services = [
   {
@@ -177,7 +182,6 @@ export default function Home() {
       toast({
         title: "Something went wrong",
         description: "Please try again later.",
-        variant: "destructive"
       });
     }
   });
@@ -208,7 +212,7 @@ export default function Home() {
               className="cursor-pointer"
               data-testid="logo-nav"
             >
-              <img src={logoImage} alt="Levion Studio" className="h-8 md:h-10" />
+              <img src ={logoImage} alt="Levion Studio" className="h-8 md:h-10" />
             </motion.div>
 
             <div className="hidden md:flex items-center gap-8">
@@ -334,8 +338,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="mb-8"
           >
-            <img 
-              src={logoImage} 
+            <img src ={logoImage} 
               alt="Levion Studio" 
               className="h-20 md:h-28 mx-auto mb-12"
               data-testid="img-hero-logo"
