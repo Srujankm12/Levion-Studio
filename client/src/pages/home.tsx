@@ -212,7 +212,7 @@ export default function Home() {
               className="cursor-pointer"
               data-testid="logo-nav"
             >
-              <img src ={logoImage} alt="Levion Studio" className="h-8 md:h-10" />
+              <img src ={logoImage.src} alt="Levion Studio" className="h-8 md:h-10" />
             </motion.div>
 
             <div className="hidden md:flex items-center gap-8">
@@ -338,7 +338,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="mb-8"
           >
-            <img src ={logoImage} 
+            <img src ={logoImage.src} 
               alt="Levion Studio" 
               className="h-20 md:h-28 mx-auto mb-12"
               data-testid="img-hero-logo"
@@ -764,7 +764,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 py-12">
           <div className="grid md:grid-cols-3 gap-12 mb-8">
             <div>
-              <img src={logoImage} alt="Levion Studio" className="h-8 mb-4" />
+              <img src={logoImage.src} alt="Levion Studio" className="h-8 mb-4" />
               <p className="text-muted-foreground leading-relaxed">
                 The Freelance Agency for YOU. Creating exceptional digital experiences from communication to deployment.
               </p>
